@@ -1,0 +1,147 @@
+body {
+    font-family: Arial, sans-serif;
+    /* Sets the default font for the quiz */
+}
+
+/* General container styling for the quiz box */
+.quiz {
+    border: 1px solid #e0e0e0;
+    border-radius: 8px;
+    padding: 20px;
+    margin: 20px 0;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    background-color: #ffffff;
+    position: relative;
+}
+
+/* Styling for paragraphs within the quiz, typically used for questions */
+.quiz p {
+    font-weight: bold;
+    font-size: 1.2em;
+    margin-bottom: 15px;
+}
+
+/* Removes bullet points and padding for quiz options */
+.quiz ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+/* Styling for each quiz option */
+.quiz li {
+    cursor: pointer;
+    padding: 10px;
+    margin-bottom: 10px;
+    border-radius: 6px;
+    border: 1px solid #e0e0e0;
+    transition: background-color 0.3s, border-color 0.3s;
+    font-size: 1em;
+}
+
+/* Hover effect for quiz options */
+.quiz li:hover {
+    background-color: #f9f9f9;
+}
+
+/* Styling for selected quiz option */
+.quiz li.selected {
+    font-weight: bold;
+    border-color: #007bff;
+    background-color: #e7f3ff;
+}
+
+/* Styling for correctly selected quiz option */
+.quiz li.correct.selected {
+    background-color: #d4edda;
+    border-color: #28a745;
+    color: #155724;
+}
+
+/* Styling for incorrectly selected quiz option */
+.quiz li.incorrect.selected {
+    background-color: #f8d7da;
+    border-color: #dc3545;
+    color: #721c24;
+}
+
+/* Styling for checkboxes in multi-choice questions */
+.multi-choice-checkbox {
+    margin-right: 10px;
+    cursor: pointer;
+}
+
+/* Styling when a multi-choice checkbox is selected for a correct option */
+.quiz li.correct .multi-choice-checkbox:checked+span {
+    background-color: #d4edda;
+    border-color: #28a745;
+    color: #155724;
+}
+
+/* Styling when a multi-choice checkbox is selected for an incorrect option */
+.quiz li.incorrect .multi-choice-checkbox:checked+span {
+    background-color: #f8d7da;
+    border-color: #dc3545;
+    color: #721c24;
+}
+
+/* Indication or hint box, initially hidden */
+.indice {
+    margin-top: 20px;
+    padding: 15px;
+    border-radius: 8px;
+    border: 1px solid #ffeeba;
+    background-color: #fff3cd;
+    color: #856404;
+    display: none;
+    font-size: 1em;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+/* Adds the "Hint:" label before hint content */
+.hint::before {
+    content: "Hint: ";
+    font-weight: bold;
+}
+
+/* Container for the progress bar, appearing at the top of the quiz */
+.progress-bar-container {
+    width: 100%;
+    background-color: #f3f3f3;
+    border-radius: 4px;
+    margin-bottom: 20px;
+    height: 10px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+/* Actual progress bar element, fills the progress container */
+.progress-bar {
+    width: 0;
+    height: 100%;
+    background-color: #4caf50;
+    border-radius: 4px;
+    transition: width 0.3s ease;
+}
+
+/* Button styling for showing hints */
+.hint-button {
+    background: none;
+    border: none;
+    cursor: pointer;
+    color: #007bff;
+    font-size: 1.2em;
+    padding: 0;
+    margin-left: 10px;
+}
+
+/* Hover effect for the hint button */
+.hint-button:hover {
+    color: #0056b3;
+}
+
+/* Styling for media content (images, videos, etc.) */
+.media-content {
+    max-width: 100%;
+    height: auto;
+    display: block;
+    margin-bottom: 15px;
+}

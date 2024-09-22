@@ -1,0 +1,19 @@
+site_name: My Docs
+
+plugins:
+  - search
+  - mkdocs_quiz:
+      quiz_file: quizzes.json
+      language: en
+      show_refresh_button: true
+      show_indice_on_answer: true
+      show_score: true
+      show_progress_bar: true
+      logging: true
+
+extra_css:
+  - stylesheets/extra.css
+  - https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css
+
+extra_javascript:
+  - javascripts/extra.js
