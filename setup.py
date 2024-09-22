@@ -10,8 +10,8 @@ def read_readme():
         return ""
 
 setup(
-    name='mkdocs_quiz',
-    version='0.0.1',
+    name='mkdocs_quizz',
+    version='0.0.2',
     description='A MkDocs plugin to create quiz',
     author_email='benjamin@proton.me',
     long_description=read_readme(),

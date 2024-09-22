@@ -332,22 +332,6 @@ To run the tests, use the `tox` command:
 tox
 ```
 
-You should see output similar to:
-
-```
-============================================================= test session starts =============================================================
-platform darwin -- Python 3.7.0, pytest-7.4.4, pluggy-1.2.0
-plugins: dash-2.8.1, anyio-3.7.1, requests-mock-1.7.0
-collected 34 items                                                                                                                          
-
-test_html_generation.py ..........                                                                                                    [ 29%]
-test_logic.py ...........                                                                                                             [ 61%]
-test_mock.py .....                                                                                                                    [ 76%]
-test_ui_components.py ........                                                                                                        [100%]
-
-============================================================== 34 passed in 0.67s ==============================================================
-```
-
 --- 
 
 ## License
