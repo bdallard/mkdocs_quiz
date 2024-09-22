@@ -2,6 +2,8 @@
 
 `mkdocs_quiz` is a MkDocs plugin that allows you to integrate interactive quizzes into your documentation site using custom JSON files. This plugin supports multiple quiz types, including multiple-choice, true-false, fill-in-the-blank questions. It provides options to customize quiz behavior and appearance, enhancing user engagement with your documentation.
 
+[![CI](https://github.com/bdallard/mkdocs_quiz/actions/workflows/ci.yml/badge.svg?branch=main)](https://github.com/bdallard/mkdocs_quiz/actions/workflows/ci.yml)
+
 ## Features
 
 - **Multiple Quiz Types**: Support for various question formats.
