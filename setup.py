@@ -25,7 +25,7 @@ setup(
     ],
     entry_points={
         'mkdocs.plugins': [
-            'mkdocs_quiz = mkdocs_quiz.plugin:QuizPlugin'
+            'mkdocs_quizz = mkdocs_quiz.plugin:QuizPlugin'
         ]
     },
     keywords='mkdocs plugin quiz',
